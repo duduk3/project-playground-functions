@@ -111,12 +111,33 @@ function fizzBuzz(entrys) {
 //============================================
 //* Desafio 9
 //============================================
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let newString = string;
+
+  for ( let i = 0; i < string.length; i +=1 ) {
+    newString = newString.replace("a", "1");
+    newString = newString.replace("e", "2");
+    newString = newString.replace("i", "3");
+    newString = newString.replace("o", "4");
+    newString = newString.replace("u", "5");
+  }
+  return newString;
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let newString = string;
+
+  for ( let i = 0; i < string.length; i +=1 ) {
+    newString = newString.replace("1", "a");
+    newString = newString.replace("2", "e");
+    newString = newString.replace("3", "i");
+    newString = newString.replace("4", "o");
+    newString = newString.replace("5", "u");
+  }
+  return newString;
 }
+
+
 
 module.exports = {
   calcArea,
