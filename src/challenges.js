@@ -85,15 +85,32 @@ function catAndMouse(mouse, cat1, cat2) {
   return trombada;
 }
 
-console.log(catAndMouse(10, 8, 12));
 
 
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+//============================================
+//* Desafio 8
+//============================================
+function fizzBuzz(entrys) {
+  let waiting = [];
+  for (let i = 0; i < entrys.length; i += 1){
+    if ( entrys[i] % 3 === 0 && entrys[i] % 5 === 0) {
+      waiting.push('fizzBuzz');
+    }else if (entrys[i] % 3 === 0) {
+      waiting.push('fizz');
+    }else if (entrys[i] % 5 === 0) {
+      waiting.push('buzz');
+    }else {
+      waiting.push('bug!');
+    }
+  }
+  return waiting;
 }
 
-// Desafio 9
+
+
+//============================================
+//* Desafio 9
+//============================================
 function encode() {
   // seu código aqui
 }
