@@ -1,9 +1,10 @@
-// Desafio 10
-function techList() {
-  // seu código aqui
+//* Desafio 10
+function techList(tech, name) {
+  let technology = {};
+  technology
 }
 
-// Desafio 11
+//* Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
 }
