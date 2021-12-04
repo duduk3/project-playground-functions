@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-unused-vars */
 /* eslint-disable complexity */
@@ -46,16 +47,16 @@ function footballPoints(wins, ties) {
 //= ===========================================
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(values) {
-  let num = 0;
+  let max = 0;
   let count = 0;
   for (let i = 0; i < values.length; i += 1) {
-    if (values[i] >= num) {
-      if (values[i] === num) {
+    if (values[i] >= max) {
+      if (values[i] === max) {
         count += 1;
       } else {
         count = 1;
       }
-      num = values[i];
+      max = values[i];
     }
   }
   return count;
@@ -66,26 +67,23 @@ function highestCount(values) {
 //= ===========================================
 // eslint-disable-next-line max-lines-per-function
 function catAndMouse(mouse, cat1, cat2) {
-  let cat1Win = mouse - cat1;
-  let cat2Win = mouse - cat2;
-  // eslint-disable-next-line semi
-  let trombada = 'os gatos trombam e o rato foge.'
-  if (cat1Win < 0) {
-    cat1Win *= -1;
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
+  let final = 'os gatos trombam e o rato foge.';
+
+  if (distanciaCat1 < 0) {
+    distanciaCat1 *= -1;
   }
-  if (cat2Win < 0) {
-    cat2Win *= -1;
+  if (distanciaCat2 < 0) {
+    distanciaCat2 *= -1;
   }
 
-  if (cat1Win < cat2Win) {
-    trombada = 'cat1';
-  } else if (cat1Win > cat2Win) {
-    trombada = 'cat2';
+  if (distanciaCat1 < distanciaCat2) {
+    final = 'cat1';
+  } else if (distanciaCat2 < distanciaCat1) {
+    final = 'cat2';
   }
-  // else {
-  //   trombada
-  // }
-  return trombada;
+  return final;
 }
 
 //= ===========================================

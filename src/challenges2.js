@@ -1,3 +1,9 @@
+/* eslint-disable operator-assignment */
+/* eslint-disable prefer-template */
+/* eslint-disable no-plusplus */
+/* eslint-disable eqeqeq */
+/* eslint-disable dot-notation */
+/* eslint-disable no-empty */
 /* eslint-disable max-lines-per-function */
 /* eslint-disable keyword-spacing */
 /* eslint-disable comma-dangle */
@@ -23,38 +29,56 @@
 function techList(tech, name) {
   let technology = {};
   let newList = [];
-    technology.tech = tech;
-    technology.name = name;
+  technology.tech = tech;
+  technology.name = name;
 
   if ( technology.tech[0] === undefined ) {
-    return console.log('Vazio!');
+    return 'Vazio!';
   } 
   else {
-    technology.lenth = technology.tech.sort();
-    for( let i = 0; i < 5; i += 1 ){
-//      for ( let index in technology.tech) {
+    technology.tech = technology.tech.sort();
+    for( let i = 0; i < technology.tech.length; i += 1 ){
         newList.push({ 
           tech: technology.tech[i],
           name: technology.name
         });
-//      } 
     }
     return newList;
   }
 }
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'));
-
-// eslint-disable-next-line no-multiple-empty-lines
-
-// eslint-disable-next-line no-multiple-empty-lines
-
 //= =========================================
 //* Desafio 11
 //= =========================================
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(listOfNumbers) {
+  let telephoneNumber = '(';
+  if (listOfNumbers.length != 11 ) {
+    return "Array com tamanho incorreto.";
+  }
+  for (let i = 0; i < listOfNumbers.length; i += 1 ) {
+    if( listOfNumbers[i] > 9 || listOfNumbers[i] < 0 ){
+      return "não é possível gerar um número de telefone com esses valores";
+    }
+    if ( i < 2) {
+      telephoneNumber = telephoneNumber + listOfNumbers[i];
+    }
+    if (i === 2) {
+      telephoneNumber = telephoneNumber + ') ' + listOfNumbers[i];
+    }
+    if (i > 2 && i < 7) {
+      telephoneNumber = telephoneNumber + listOfNumbers[i];
+    }
+    if (i === 7) {
+      telephoneNumber = telephoneNumber + '-' + listOfNumbers[i];
+    }
+    if (i > 7) {
+      telephoneNumber = telephoneNumber + listOfNumbers[i];
+    }
+  }
+  return telephoneNumber;
 }
+
+console.log( generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]) );
 
 //= =========================================
 //* Desafio 12
