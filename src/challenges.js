@@ -1,3 +1,6 @@
+/* eslint-disable max-lines-per-function */
+/* eslint-disable semi */
+/* eslint-disable brace-style */
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-unused-vars */
@@ -47,13 +50,14 @@ function footballPoints(wins, ties) {
 //= ===========================================
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(values) {
-  let max = 0;
-  let count = 0;
-  for (let i = 0; i < values.length; i += 1) {
+  let max = values[0];
+  let count = 1;
+  for (let i = 1; i < values.length; i += 1) {
     if (values[i] >= max) {
       if (values[i] === max) {
         count += 1;
-      } else {
+      }
+      else {
         count = 1;
       }
       max = values[i];
@@ -78,8 +82,6 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return final;
 }
-
-console.log(catAndMouse(14, 8, 20));
 
 //= ===========================================
 //* Desafio 8
