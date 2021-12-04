@@ -67,16 +67,16 @@ function highestCount(values) {
 //= ===========================================
 // eslint-disable-next-line max-lines-per-function
 function catAndMouse(mouse, cat1, cat2) {
-  let distanciaCat1 = mouse - cat1;
-  let distanciaCat2 = mouse - cat2;
+  let distanciaCat1 = Math.abs(mouse - cat1);
+  let distanciaCat2 = Math.abs(mouse - cat2);
   let final = 'os gatos trombam e o rato foge.';
 
-  if (distanciaCat1 < 0) {
-    distanciaCat1 *= -1;
-  }
-  if (distanciaCat2 < 0) {
-    distanciaCat2 *= -1;
-  }
+  // if (distanciaCat1 < 0) {
+  //   distanciaCat1 *= -1;
+  // }
+  // if (distanciaCat2 < 0) {
+  //   distanciaCat2 *= -1;
+  // }
 
   if (distanciaCat1 < distanciaCat2) {
     final = 'cat1';
@@ -85,6 +85,8 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return final;
 }
+
+console.log(catAndMouse(14, 8, 20));
 
 //= ===========================================
 //* Desafio 8
