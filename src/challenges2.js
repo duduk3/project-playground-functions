@@ -1,3 +1,4 @@
+/* eslint-disable radix */
 /* eslint-disable operator-assignment */
 /* eslint-disable prefer-template */
 /* eslint-disable no-plusplus */
@@ -100,8 +101,21 @@ function triangleCheck(a, b, c) {
 //= =========================================
 //* Desafio 13
 //= =========================================
-function hydrate() {
-  // seu código aqui
+function hydrate(requests) {
+  let regExpression = /\d+/g;
+  let getAmount = requests.match(regExpression);
+  let count = 0;
+  let result = '';
+  for( let i = 0; i < getAmount.length; i += 1 ) {
+    count += parseInt(getAmount[i]);
+  }
+  if (count <= 1 ) {
+    result = count + ' copo de água';
+  }
+  else {
+    result = count + ' copos de água';
+  }
+  return result;
 }
 
 module.exports = {
