@@ -81,9 +81,10 @@ function generatePhoneNumber(listOfNumbers) {
 //= =========================================
 //* Desafio 12
 //= =========================================
-function triangleCheck() {
+function triangleCheck(a, b, c) {
   // seu código aqui
 }
+
 
 //= =========================================
 //* Desafio 13
