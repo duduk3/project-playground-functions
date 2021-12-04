@@ -82,9 +82,20 @@ function generatePhoneNumber(listOfNumbers) {
 //* Desafio 12
 //= =========================================
 function triangleCheck(a, b, c) {
-  // seu código aqui
+  let isValid = false;
+  if ( a + b > c && a + c > b && b + c > a ) {
+    isValid = true;
+  }
+  else {
+    isValid = false;
+  }
+  if ( Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a ) {
+    isValid = true;
+  }else {
+    isValid = false;
+  }
+  return isValid;
 }
-
 
 //= =========================================
 //* Desafio 13
