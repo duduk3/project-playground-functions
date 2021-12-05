@@ -1,3 +1,4 @@
+/* eslint-disable spaced-comment */
 /* eslint-disable radix */
 /* eslint-disable operator-assignment */
 /* eslint-disable prefer-template */
@@ -52,14 +53,13 @@ function techList(tech, name) {
 //* Desafio 11
 //= =========================================
 function generatePhoneNumber(listOfNumbers) {
-  let originalList = listOfNumbers;
+  let originalList = listOfNumbers.join('');
   let orderList = listOfNumbers.sort();
   let iqual = orderList[0];
   let count = 1;
   let isValid = true;
-  let telephoneNumber = '(';
 
-  if (originalList.length != 11 ) {
+  if (orderList.length != 11 ) {
     return "Array com tamanho incorreto.";
   }
   for (let i = 1; i < orderList.length; i += 1) {
@@ -81,23 +81,9 @@ function generatePhoneNumber(listOfNumbers) {
     if( listOfNumbers[i] > 9 || listOfNumbers[i] < 0 ){
       return "não é possível gerar um número de telefone com esses valores";
     }
-    if ( i < 2) {
-      telephoneNumber = telephoneNumber + listOfNumbers[i];
-    }
-    if (i === 2) {
-      telephoneNumber = telephoneNumber + ') ' + listOfNumbers[i];
-    }
-    if (i > 2 && i < 7) {
-      telephoneNumber = telephoneNumber + listOfNumbers[i];
-    }
-    if (i === 7) {
-      telephoneNumber = telephoneNumber + '-' + listOfNumbers[i];
-    }
-    if (i > 7) {
-      telephoneNumber = telephoneNumber + listOfNumbers[i];
-    }
   }
-  return telephoneNumber;
+  //*Esse código de formatação usando o método "replace()" foi tirado de : https://stackoverflow.com/questions/8358084/regular-expression-to-reformat-a-us-phone-number-in-javascript */
+  return originalList.replace(/(\d{2})(\d{5})(\d{3})/, '($1) $2-$3');
 }
 
 //= =========================================
