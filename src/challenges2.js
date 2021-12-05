@@ -52,9 +52,30 @@ function techList(tech, name) {
 //* Desafio 11
 //= =========================================
 function generatePhoneNumber(listOfNumbers) {
+  let originalList = listOfNumbers;
+  let orderList = listOfNumbers.sort();
+  let iqual = orderList[0];
+  let count = 1;
+  let isValid = true;
   let telephoneNumber = '(';
-  if (listOfNumbers.length != 11 ) {
+
+  if (originalList.length != 11 ) {
     return "Array com tamanho incorreto.";
+  }
+  for (let i = 1; i < orderList.length; i += 1) {
+    if (orderList[i] === iqual) {
+      count += 1;
+    } else {
+      count = 1;
+    }
+    if ( count >= 3) {
+      isValid = false;
+    }
+
+    iqual = orderList[i];
+  }
+  if( !isValid ) {
+    return "não é possível gerar um número de telefone com esses valores";
   }
   for (let i = 0; i < listOfNumbers.length; i += 1 ) {
     if( listOfNumbers[i] > 9 || listOfNumbers[i] < 0 ){
