@@ -20,15 +20,16 @@ function compareTrue(arg1, arg2) {
 //* Desafio 2
 //= ===========================================
 function calcArea(base, height) {
-  return base * height / 2;
+  const area = (base * height) / 2;
+  return area;
 }
 
 //= ===========================================
 //* Desafio 3
 //= ===========================================
 function splitSentence(frase) {
-  let separatedFrase = [];
-  return separatedFrase = frase.split(' ');
+  let separatedFrase = frase.split(' ');
+  return separatedFrase;
 }
 
 //= ===========================================
@@ -90,7 +91,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function fizzBuzz(entrys) {
   let waiting = [];
-  for (let i = 0; i < entrys.length; i += 1){
+  for (let i = 0; i < entrys.length; i += 1) {
     if (entrys[i] % 3 === 0 && entrys[i] % 5 === 0) {
       waiting.push('fizzBuzz');
     } else if (entrys[i] % 3 === 0) {
