@@ -6,7 +6,7 @@
 
 <details>
   <summary>
-    <b>📌 Algumas fuções que aprendemos no arquivo challenges.js:</b>
+    <b>📌 Algumas funções que aprendemos no arquivo challenges.js:</b>
   </summary>
   
   - **1** compareTrue(a, b)
@@ -23,7 +23,7 @@
 
 <details>
   <summary>
-    <b>📌  Algumas fuções que aprendemos no arquivo challenges2.js:</b>
+    <b>📌  Algumas funções que aprendemos no arquivo challenges2.js:</b>
   </summary>
 
   - **1** techList(a, b)
@@ -48,4 +48,4 @@
 </details>
 
 
-### Foi bem desafiador!  Cada bloco de código era um avanço imenso
+### Foi bem desafiador!  Cada bloco de código era um avanço imenso.
