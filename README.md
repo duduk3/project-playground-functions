@@ -1,13 +1,51 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Este projeto é um desafio de lógica!!! :rocket:
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Aprendemos a desenvolver algumas funções que resolvem problemas encontrados no dia-a-dia de uma pessoa programadora.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+### A tarefa de criar funções com o Javascript  foi o conteúdo realizado no bloco 3 do curso da Trybe. 
+
+<details>
+  <summary>
+    <b>📌 Algumas fuções que aprendemos no arquivo challenges.js:</b>
+  </summary>
+  
+  - **1** compareTrue(a, b)
+  - **2** calcArea(a, b)
+  - **3** splitSentence(a)
+  - **4** concatName(a)
+  - **5** footballPoints(a, b)
+  - **6** highestCount(a)
+  - **7** catAndMouse(a, b, c)
+  - **8** fizzBuzz(a)
+  - **9** encode(a)
+  - **10** decode(a)
+</details>
+
+<details>
+  <summary>
+    <b>📌  Algumas fuções que aprendemos no arquivo challenges2.js:</b>
+  </summary>
+
+  - **1** techList(a, b)
+  - **2** generatePhoneNumber(a)
+  - **3** triangleCheck(a, b, c)
+  - **4** hydrate(a)
+</details>
+
+<details>
+  <summary>
+    <b>😉 Depois disso, estou melhor em:</b>
+  </summary>
+
+  - **foco**
+  - **determinação**
+  - **paciência**
+  - **javascript**
+  - **funções**
+  - **lógica**
+  - **resiliência**
+  - **disciplina**
+</details>
+
+
+### Foi bem desafiador!  Cada bloco de código era um avanço imenso
